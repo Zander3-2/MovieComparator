@@ -16,7 +16,7 @@ public int getReleaseYear(){return releaseYear;}
 
 @Override
 public String toString(){
-    return title + genre + releaseYear;
+    return title + " " + genre + " " + releaseYear;
 }
     }
 
