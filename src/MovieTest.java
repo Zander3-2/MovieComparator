@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 public class MovieTest {
     public static void main(String[] args) {
@@ -14,17 +15,17 @@ public class MovieTest {
         System.out.println(movieList);
         System.out.println();
 
-        Collection.sort(movieList, new MovieTitleComparator());
+        Collections.sort(movieList, new MovieTitleComparator());
         System.out.println("Sortet by Title:");
         System.out.println(movieList);
         System.out.println();
 
-        Collection.sort(movieList, new MovieGenreComparator());
+        Collections.sort(movieList, new MovieGenreComparator());
         System.out.println("Sortet by Genre:");
         System.out.println(movieList);
         System.out.println();
 
-        Collection.sort(movieList, new MovieYearComparator());
+        Collections.sort(movieList, new MovieYearComparator());
         System.out.println("Sortet by Year");
         System.out.println(movieList);
         System.out.println();
